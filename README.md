@@ -2,7 +2,12 @@
 
 - Created using create-react-app
 - CSS configuration using tailwind.css 
+- Header
 
+
+-Login Form
+-Sign up form
+    -
 #Features
 
 - Login/Signup page

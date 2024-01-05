@@ -1,12 +1,8 @@
-import './App.css';
+import Body from './components/Body';
 
 function App() {
   return (
-    <div className="App">
-     <p className='text-amber-700'>
-      Hello
-     </p>
-    </div>
+  <Body />
   );
 }
 
