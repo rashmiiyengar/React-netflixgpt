@@ -3,11 +3,12 @@
 - Created using create-react-app
 - CSS configuration using tailwind.css 
 - Header
+- Routing
+- Sign In Form/ Sign up form
+- useRef hook 
+- Form Validation
 
 
--Login Form
--Sign up form
-    -
 #Features
 
 - Login/Signup page
