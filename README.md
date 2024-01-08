@@ -15,6 +15,19 @@
 - Implemented signout Features
 - updateprofile api usimng fire base
 - Fetch from TMDB Movies
+- Bug Fix- redirect if user is not logged in redirect /browse to login page and vice-versa
+- Unsubscribed to the onAuthStatechanged callback
+- Registered in TMDB API and get access token
+- get data from TMDB now playing movie list API
+- Custom hook nor nowPlaying movies
+- create a movie slice
+- Planning for Main container and secondary container
+- update store with movie data
+- fetch Data for trailer video
+- update store with trailer video 
+- embedded the youtube video and made it autoplay and mute
+- added tailwind classes for css
+
 
 #Features
 
