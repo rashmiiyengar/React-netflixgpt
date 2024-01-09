@@ -1,6 +1,7 @@
 import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
+import VideoCard from "./VideoCard";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 
@@ -17,6 +18,10 @@ const Body = () => {
       path: "/browse",
       element: <Browse />,
     },
+    {
+      path:"/video/:movieId",
+      element: <VideoCard />
+    }
   ]);
 
 
