@@ -28,11 +28,11 @@ const Login = () => {
 
   const handleButtonClick = () => {
     //Validate the form data
-    console.log(email.current.value, password.current.value);
+    
 
     const msg = checkValidData(email.current.value, password.current.value);
     setErrMessage(msg);
-    console.log(msg);
+   
 
     if (msg) return; //if msg is present return and end
 
@@ -72,7 +72,7 @@ const Login = () => {
               setErrMessage(error.message);
             });
 
-          console.log(user);
+       
 
           // ...
         })
@@ -93,7 +93,7 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           // ...
-          console.log(user);
+      
         })
         .catch((error) => {
           const errorCode = error.code;

@@ -19,7 +19,7 @@
 - Unsubscribed to the onAuthStatechanged callback
 - Registered in TMDB API and get access token
 - get data from TMDB now playing movie list API
-- Custom hook nor nowPlaying movies
+- Custom hook now nowPlaying movies
 - create a movie slice
 - Planning for Main container and secondary container
 - update store with movie data
@@ -28,6 +28,10 @@
 - embedded the youtube video and made it autoplay and mute
 - added tailwind classes for css
 - Build secondary component
+- GPT Search page
+- Multi language feature in our app
+- Integrate GPT API's
+
 
 
 #Features
