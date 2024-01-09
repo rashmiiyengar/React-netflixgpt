@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 import { useNavigate, useParams } from "react-router-dom";
+import { NETFLIX_LOGO } from "../utils/constants";
 
 const VideoCard = () => {
 
@@ -16,9 +17,10 @@ const VideoCard = () => {
     navigate("/browse")
   }
   return (
-    <div className=" w-screen bg-black">
-      <div className="bg-black flex justify-end p-4 ">
-        <button className="text-white bg-red-600 p-2 w-24 rounded-md opacity-80" onClick={handleHomeClick}>
+    <div className=" w-screen bg-black ">
+      <div className="bg-black flex justify-between p-4 h-20 opacity-90 mr-2">
+      <img className="w-44" src={NETFLIX_LOGO} alt="logo" />
+        <button className="text-white bg-red-600 p-2 w-24 rounded-md" onClick={handleHomeClick}>
           Home
         </button>
       </div>
