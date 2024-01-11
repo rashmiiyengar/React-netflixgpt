@@ -21,6 +21,7 @@ const useNowPlayingMovies =()=>{
       dispatch(addNowPlayingMovies(json.results));
     };
   
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
 
       if(!nowPlayingMovies)

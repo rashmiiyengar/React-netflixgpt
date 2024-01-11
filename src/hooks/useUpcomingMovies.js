@@ -21,6 +21,7 @@ const useUpcomingMovies =()=>{
         dispatch(addUpcomingMovies(json.results));
     }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         if(!upcomingMovies)
         getUpcomingMovies();

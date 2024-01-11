@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { API_OPTIONS } from "../utils/constants";
-import { addTopRatedMovies, addUpcomingMovies } from "../utils/movieSlice";
+import { addTopRatedMovies } from "../utils/movieSlice";
 import { useEffect } from "react";
 
 
@@ -20,6 +20,7 @@ const useTopRatedMovies =()=>{
         dispatch(addTopRatedMovies(json.results));
     }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         if(!topRatedMovies)
         getTopRatedMovies();
