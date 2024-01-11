@@ -60,6 +60,7 @@ const Header = () => {
     //Unsubscribe when component Unmounts
 
     return () => unsubscribe();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
