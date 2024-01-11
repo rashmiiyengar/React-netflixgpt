@@ -17,10 +17,14 @@ const firebaseConfig = {
   measurementId: "G-F0EQDHMTEC"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+try {
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  console.log(analytics);
+  // Other Firebase code...
 
-console.log(analytics)
+} catch (error) {
+  console.error("Firebase initialization error:", error);
+}
 ///Auth
 export  const auth = getAuth();
