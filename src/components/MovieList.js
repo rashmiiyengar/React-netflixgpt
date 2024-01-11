@@ -11,18 +11,16 @@ const MovieList = ({title,movies}) => {
     navigate(`/video/${movieId}`);
   }
   return (
-    <div className="px-6  ">
-      <h1 className=" text-3xl py-4 text-white">{title}</h1>
-      <div className="flex overflow-x-scroll ">
-      
-        <div className="flex">
-          {movies?.map((movie) => (
-            <MovieCard key={movie.id} posterPath={movie.poster_path} onClick={()=>handleMovieClick(movie.id)}/>
-          ))}
-        </div>
-      
+    <div className={`px-6 ${'md:mt-4'}`}>
+    <h1 className="text-3xl py-4 text-white">{title}</h1>
+    <div className="flex overflow-x-scroll">
+      <div className="flex">
+        {movies?.map((movie) => (
+          <MovieCard key={movie.id} posterPath={movie.poster_path} onClick={() => handleMovieClick(movie.id)} />
+        ))}
       </div>
     </div>
+  </div>
   );
 };
 
